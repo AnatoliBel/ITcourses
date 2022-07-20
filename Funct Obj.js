@@ -14,11 +14,10 @@ car.power(5252, 250)
 
 //Pears and apples are accepted to the warehouse, write a function that returns 
 //the result of adding the number of accepted pears and apples
-function sum(pears, apples) {
+function TotalFruit(pears, apples) {
     console.log("Total pears and apples on the warehouse " + (pears + apples));
 }
-sum(346, 224);
-
+TotalFruit(346, 224);
 
 // Your name is saved in the payment terminal, write a function to define the name in the terminal
 // (if you entered your name, then hello + name, if not, then there is no such name)
@@ -31,20 +30,22 @@ function Welcome() {
 Welcome()
 
 // Write a function for calculating the type of argument and type output to the console
-const Arg = 12
-function DefineArg() {
-    console.log(typeof Arg)
+
+function DefineArg(Arg) {
+    console.log('Argument ' + Arg + ' is ' + typeof Arg)
 }
-DefineArg()
+DefineArg(true)
+//DefineArg('departure')
+//DefineArg(45)
 
 // Write a function that determines whether a number is prime or not
 function DeterPrime(val) {
     let step = 2;
-    const balance = true;
+    let balance = true;
     for (step = 2; step < val; step++) {
-        if (val % step == 0) { balance = false }
-        console.log("Statement, 'a number in the variable Val is prime' is  " + balance)
+        if (val % step == 0) { balance = false }   
     }
+    console.log("Statement '" + val + " is prime number' is  " + balance)
 }
 
-DeterPrime(467)
+DeterPrime(4)
