@@ -14,38 +14,41 @@ car.power(5252, 250)
 
 //Pears and apples are accepted to the warehouse, write a function that returns 
 //the result of adding the number of accepted pears and apples
-function TotalFruit(pears, apples) {
+function totalFruit(pears, apples) {
     console.log("Total pears and apples on the warehouse " + (pears + apples));
 }
-TotalFruit(346, 224);
+totalFruit(346, 224);
 
 // Your name is saved in the payment terminal, write a function to define the name in the terminal
 // (if you entered your name, then hello + name, if not, then there is no such name)
 const UserName = ""
-function Welcome() {
+function welcome() {
     const NoName = Boolean(UserName);
     if (NoName == true) { console.log("hello " + UserName); }
     else { console.log("hello "); }
 }
-Welcome()
+welcome()
 
 // Write a function for calculating the type of argument and type output to the console
 
-function DefineArg(Arg) {
+function defineArg(Arg) {
     console.log('Argument ' + Arg + ' is ' + typeof Arg)
 }
-DefineArg(true)
+defineArg(true)
 //DefineArg('departure')
 //DefineArg(45)
 
 // Write a function that determines whether a number is prime or not
-function DeterPrime(val) {
-    let step = 2;
-    let balance = true;
-    for (step = 2; step < val; step++) {
-        if (val % step == 0) { balance = false }   
+function deterprime(val) {
+    if (val===1){console.log("the number 1 is not a prime number")
+} else {
+        let step = 2;
+        let balance = true;
+        for (step = 2; step < val; step++) {
+            if (val % step == 0) { balance = false }   
+        }
+        console.log("Statement '" + val + " is a prime number' is  " + balance)
     }
-    console.log("Statement '" + val + " is prime number' is  " + balance)
 }
-
-DeterPrime(4)
+    deterprime(199)
+    
